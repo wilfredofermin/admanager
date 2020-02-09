@@ -145,7 +145,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="/img/logoviva.png" alt="Viva Logo" class="brand-image img-circle" style="opacity: .8">
-      <span class="brand-text font-weight-light">ADManager</span>
+      <span class="brand-text font-weight-light">AManager</span>
       <title>{{ config('app.name', 'Laravel') }}</title>
     </a>
 
@@ -225,65 +225,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
+   <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div><!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
+          <br>  
+           {{-- -----------------------CONTENIDO DINAMICO AQUI---------------------------- --}}
+          <router-view></router-view>
+          <vue-progress-bar></vue-progress-bar>
+          {{-- --------------------------------------------------------------------------- --}}
+       <!-- /.col-md-6 -->
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -303,20 +253,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  {{-- <footer class="main-footer">
+  <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Departamento de STI
+      <strong>STI</strong> <small>Departamento de tecnologia</small> 
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2020 <a href="https://viva.com.do">Trilogy Dominicana</a>.</strong> Derechos Reservados
-  </footer> --}}
+    <strong>Copyright &copy; 2019 <a href="https://viva.com.do">Trilogy Dominicana, VIVA</a> ADManager</strong> 
+  </footer>
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 
-<script src="js/app.js"></script>
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
 
 </body>
 </html>
