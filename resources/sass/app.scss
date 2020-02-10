@@ -11,4 +11,10 @@
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
+// Menu activo
+ .router-link-exact-active{
+            background-color: #8778B2; 
+            color:#fff !important;
+             }
+
 

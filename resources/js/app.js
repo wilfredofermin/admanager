@@ -18,9 +18,22 @@ window.Vue = require('vue');
           component: require("./components/Dashboard.vue").default
       },
       {
-          path: "/profile",
+          path: "/usuario",
+          component: require("./components/Usuarios.vue").default
+      },
+      {
+          path: "/permisos",
           component: require("./components/Profile.vue").default
-      }
+      },
+      {
+          path: "/perfil",
+          component: require("./components/Profile.vue").default
+      },
+      {
+          path: "/salir",
+          component: require("./components/Profile.vue").default
+      },
+
   ];
 
 // Inicializamos el Router
