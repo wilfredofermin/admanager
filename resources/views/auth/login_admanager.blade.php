@@ -22,7 +22,10 @@
     <form method="POST" action="{{ route('login') }}">
       <input type="text" id="login" class="fadeIn second" name="username" placeholder="Usuario">
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Acceso">
+      {{-- <input type="submit" class="fadeIn fourth" value="Acceso"> --}}
+      <button type="submit" class="btn btn-primary">
+          {{ __('Login') }}
+      </button>
     </form>
 
     <!-- Remind Passowrd -->

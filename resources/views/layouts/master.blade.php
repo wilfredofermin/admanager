@@ -50,12 +50,16 @@ Este proyecto ha sido creado para ser utilizado con fines interno a la empresa. 
     <!-- SALIR DEL SISTEMA -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ">
-            <route class="nav-link"> 
-              <i class="nav-icon fas fa-power-off"></i>
-               Salir
-              </p>
-            </a>
-          </li>
+            {{-- <a href=#  class="nav-link">  --}}
+              <a href=# class="nav-link  fas fa-power-off" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+              {{ __('Logout') }}
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>        
+          </li>   
     </ul>
   </nav>
   <!-- /.navbar -->
