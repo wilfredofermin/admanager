@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('auth.login_admanager');
+    return view('welcome');
 });
 
 Auth::routes();
