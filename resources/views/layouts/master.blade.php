@@ -17,7 +17,8 @@ Este proyecto ha sido creado para ser utilizado con fines interno a la empresa. 
   <!-- Style -->
   <link rel="stylesheet" href="/css/app.css">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="sidebar-mini layout-navbar-fixed" style="height: auto"; >
+
 <div class="wrapper" id="app" >
 
   <!-- Navbar -->

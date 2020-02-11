@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <!-- CSRF Token -->
-   <meta name="csrf-token" content="{{ csrf_token() }}">
-   
- <link rel="stylesheet" href="/css/app.css">
+@extends('layouts.app')
+
+@section('content')
  <link rel="stylesheet" href="/css/login.css">
- 
 
 <div class="wrapper fadeInDown"  id="app">
 
@@ -21,22 +14,11 @@
 
     <!-- Login Form -->
     <form method="POST" action="{{ route('login') }}">
-
-       @csrf
-        @error('username')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-        @enderror
-        @error('password')
-            <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-        @enderror
+        @csrf
       <input type="text" id="username" class="fadeIn second" name="username" value="{{ old('username') }}" placeholder="Usuario" autofocus>
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Acceso" {{ __('Login') }} >
-      </button>
+      
     </form>
 
     <!-- Remind Passowrd -->
@@ -47,6 +29,7 @@
   <br>
      <strong>Copyright &copy; 2020 <a href="https://viva.com.do">Trilogy Dominicana </a> ADManager</strong> 
      
-     <script src="{{ asset('js/app.js') }}" defer></script>
+     <script src="{{ asset('js/app.js') }}"></script>
 </div>
 
+@endsection
