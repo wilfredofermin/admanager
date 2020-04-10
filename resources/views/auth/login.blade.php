@@ -16,7 +16,7 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
       <input type="text" id="username" class="fadeIn second" name="username" value="{{ old('username') }}" placeholder="Usuario" autofocus>
-      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Acceso" {{ __('Login') }} >
       
     </form>

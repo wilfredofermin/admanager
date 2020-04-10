@@ -34,6 +34,6 @@
     </div>
   </div>
   <br>
-     <strong>Copyright &copy; 2020 <a href="https://viva.com.do">Trilogy Dominicana </a> ADManager</strong> 
+     <strong>Copyright &copy; 2020 <a href="https://viva.com.do">Trilogy Dominicana </a> ADM Viva</strong> 
 </div>
 

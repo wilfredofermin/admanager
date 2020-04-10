@@ -26,9 +26,11 @@
                   <tr>
                     <th>Nombre</th>
                     <th>Apellidos</th>
-                    <th>Status</th>
-                    <th>Tipo</th>
+                    <!-- <th>Status</th> -->
                     <th>Email</th>
+                    <th>Departamento</th>
+                    <th>Sucursal</th>
+                    <th>Cargo</th>
                     <th>Creacion</th>
                     <th>Modificado</th>
                     <th>Modificar</th>
@@ -158,9 +160,8 @@
                       class="form-control"
                       rows="5"
                       placeholder="Descripcion del usuario (Opcional)"
-                    >
-                         class="form-control" :class="{ 'is-invalid': form.errors.has('bio') }">
-                    </textarea>
+                      :class="{ 'is-invalid': form.errors.has('bio') }"
+                    ></textarea>
                     <has-error :form="form" field="bio"></has-error>
                   </div>
 

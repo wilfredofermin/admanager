@@ -1,20 +1,23 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
-@import '~admin-lte/dist/css/adminlte.css';
+@import "~bootstrap/scss/bootstrap";
+@import "~admin-lte/dist/css/adminlte.css";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~vue-select/src/scss/vue-select.scss";
 
 // Menu activo
- .router-link-exact-active{
-            background-color: #8778B2; 
-            color:#fff !important;
-             }
+.router-link-exact-active {
+    background-color: #8778b2;
+    color: #fff !important;
+}
 
-
+.card-primary.card-outline {
+    border-top: 3px solid #8778b2;
+}

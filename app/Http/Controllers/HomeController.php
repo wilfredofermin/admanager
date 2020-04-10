@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Adldap\Laravel\Facades\Adldap;
+
+use Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +27,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+           $collection = collect(Adldap::search()->users()->find(Auth::user()->username));
+
+         $filtered = $collection->only(['description']);
+        return view('home')->with('filtered',json_decode($filtered));
     }
 }
